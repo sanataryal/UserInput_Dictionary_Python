@@ -1,0 +1,10 @@
+d1 = {"First Name": "", "Last Name": "", "Age": "", "City/Town": ""}
+fn = input("Enter Your First Name: ").strip()
+ln = input("Enter Your Last Name: ").strip()
+ag = int(input("Enter Your Age: ").strip())
+ct = input("Enter Your City/Town: ").strip()
+print(f"Hi {fn}, your description is below:")
+
+d1.update({"First Name": fn, "Last Name": ln, "Age": ag, "City/Town": ct})
+for i, j in d1.items():
+    print(i, "=", j)
